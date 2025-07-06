@@ -195,7 +195,7 @@ const uri=process.env.MONGO_URL;
 //security
 app.use(
   cors({
-    origin: ["https://web-trading-platform-dashboard.onrender.com"],
+    origin: ["https://web-trading-platform-backend.onrender.com"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
