@@ -1,5 +1,5 @@
 require('dotenv').config();
-const path = require("path");
+
 
 const express=require("express");
 const mongoose=require("mongoose");
@@ -256,14 +256,7 @@ app.post("/sellOrder",async(req,res)=>{
     res.send(" sell order saved !");
 })
 
-//chat gpt new line added 
 
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build/index.html'));
-});
 
 app.listen(PORT,()=>{
     console.log("listining on port 3005")
