@@ -20,7 +20,7 @@ export default function PrivateRoute({ children }) {
 
   useEffect(() => {
     axios.post(
-      "https://web-trading-platform-backend.onrender.com",
+      "https://web-trading-platform-backend.onrender.com/verify",
       {},
       { withCredentials: true }
     )
