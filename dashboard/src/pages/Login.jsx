@@ -43,7 +43,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
         //   navigate("/");//change due to (react can,t see the token )cookie issue 
-         window.location.href = "/"; //added due to problem 
+       navigate("/"); //added due to problem 
         }, 1000);
       } else {
         handleError(message);
